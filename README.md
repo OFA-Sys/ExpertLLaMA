@@ -1,5 +1,5 @@
 
-<p align="center" width="80%">
+<p align="center" width="100%">
 <a target="_blank"><img src="assets/logo.png" alt="ExpertLLaMA" style="width: 50%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
@@ -24,14 +24,14 @@ We release ExpertLLaMA that achieves 96% capability of ChatGPT, and surpasses co
 
 ### All Compared Against ChatGPT, ExpertLLaMA Ranked 2#
 
-<p align="center" width="80%">
-<a target="_blank"><img src="assets/ChatGPT_VS_Others.png" alt="ExpertLLaMA" style="width: 90%; min-width: 300px; display: block; margin: auto;"></a>
+<p align="center" width="100%">
+<a target="_blank"><img src="assets/ChatGPT_VS_Others.png" alt="ExpertLLaMA" style="width: 80%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ### ExpertLLaMA VS Others
 
 <p align="center" width="100%">
-<a target="_blank"><img src="assets/ExpertLLaMA_VS_Others.png" alt="ExpertLLaMA" style="width: 90%; min-width: 300px; display: block; margin: auto;"></a>
+<a target="_blank"><img src="assets/ExpertLLaMA_VS_Others.png" alt="ExpertLLaMA" style="width: 80%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ## Introduction
