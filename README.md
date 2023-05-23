@@ -51,7 +51,7 @@ We apply the proposed method on [52k Alpaca instructions](https://github.com/tat
 
 We train ExpertLLaMA using such augmented instruction-following responses based on LLaMA 7B [1], which exhibits improved capabilities under the [vicuna evaluation protocol](https://github.com/lm-sys/FastChat) while being very cost-effective and easy-to-implement at the same time:
 - **Competence**: the performance is clearly better than vanilla data produced from the same `gpt-3.5-turbo` model with standard way, and also surpass state-of-the-art open-source chatbot like [LLaMA-GPT4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM) [5] (trianed on instruction data produced with GPT4) or [Vicuna](https://github.com/lm-sys/FastChat) [4] (trained on 70k user-shared conversations). The results even show that ExpertLLaMA is even near competitive with `gpt-3.5-turbo` itself, achieving approximately 96% of its response quality.
-- **Cost**: ExpertLLaMA is built with `gpt-3.5-turbo`, which is far more cheaper than LLaMA-GPT4(https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)  (approximately 1/30) or [GPT4All](https://github.com/nomic-ai/gpt4all) (using only 1/20 data), but demonstrate better performance.
+- **Cost**: ExpertLLaMA is built with `gpt-3.5-turbo`, which is far more cheaper than [LLaMA-GPT4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)  (approximately 1/30) or [GPT4All](https://github.com/nomic-ai/gpt4all) (using only 1/20 data), but demonstrate better performance.
 - **Simplicity**: ExpertLLaMA requires no sophisticated crafting of prompting strategy, the expert identity is produced using standard in-context learning, and is directly prepended as augmentation, both procedures do not involve specialized prompt engineering.
 
 
@@ -126,7 +126,7 @@ ToDo.
 
 ### Citation
 
-Please cite the repo if you use the data or code in this repo. (the arxiv paper is being uploaded.)
+Please cite the repo as follows. (the arxiv paper is being uploaded.)
 
 ```
 @misc{ExpertPrompting,
