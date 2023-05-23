@@ -1,0 +1,2 @@
+Note that at each query we will randomly order two assistant answers to achieve robust conclusion, and re-order the returned score after we receive the response.
+So there might be inconsistency between the fields `"score"` and `"full_response"`.
