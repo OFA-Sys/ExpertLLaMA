@@ -15,8 +15,10 @@ This repo introduces ***ExpertLLaMA***, a solution to produce high-quality, elab
 
 Check our paper (to be uploaded) for further details.
 
+**Usage and License Notices**: The data is intended and licensed for research use only. The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes.
+
 ## News
-**[2023.05.23]** Initial release on expert data, evaluation, etc.
+**[2023.05.23]** Initial release on expert data, evaluation, paper, etc.
 
 
 ## Results
