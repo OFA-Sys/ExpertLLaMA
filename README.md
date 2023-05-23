@@ -111,7 +111,7 @@ torchrun --nproc_per_node=4 --master_port=<your_random_port> train.py \
 
 ## Recovering ExpertLLaMA Weights
 
-ToDo.
+TODO.
 
 
 ## Related Works, Citation and Acknowledgements
