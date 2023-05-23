@@ -25,13 +25,13 @@ We release ExpertLLaMA that achieves 96% capability of ChatGPT, and surpasses co
 ### All Compared Against ChatGPT, ExpertLLaMA Ranked 2#
 
 <p align="center" width="100%">
-<a target="_blank"><img src="assets/ChatGPT_VS_Others.png" alt="ExpertLLaMA" style="width: 80%; min-width: 300px; display: block; margin: auto;"></a>
+<a target="_blank"><img src="assets/ChatGPT_VS_Others.png" alt="ExpertLLaMA" style="width: 80%; min-width: 150px; display: block; margin: auto;"></a>
 </p>
 
 ### ExpertLLaMA VS Others
 
 <p align="center" width="100%">
-<a target="_blank"><img src="assets/ExpertLLaMA_VS_Others.png" alt="ExpertLLaMA" style="width: 80%; min-width: 300px; display: block; margin: auto;"></a>
+<a target="_blank"><img src="assets/ExpertLLaMA_VS_Others.png" alt="ExpertLLaMA" style="width: 80%; min-width: 150px; display: block; margin: auto;"></a>
 </p>
 
 ## Introduction
@@ -45,8 +45,8 @@ We use In-Context Learning to automatically write cutomized expert identity and 
 
 We apply the proposed method on [52k Alpaca instructions](https://github.com/tatsu-lab/stanford_alpaca)[3] using `gpt-3.5-turbo`. Note that although the released data are produced with `gpt-3.5-turbo`, the procedure or idea behind can actually be applied in other LLMs or more scenarios. There are cases where the response repeat the identity by saying *"As a ..."*, and we remove these expressions from the answer using simple rule-based strategy. A random case of what expert identity looks like and its effects are illustrated as follows:
 
-<p align="center" width="80%">
-<a target="_blank"><img src="assets/expertidentity_illustration.png" alt="ExpertLLaMA" style="width: 90%; min-width: 300px; display: block; margin: auto;"></a>
+<p align="center" width="100%">
+<a target="_blank"><img src="assets/expertidentity_illustration.png" alt="ExpertLLaMA" style="width: 80%; min-width: 150px; display: block; margin: auto;"></a>
 </p>
 
 We train ExpertLLaMA using such augmented instruction-following responses based on LLaMA 7B [1], which exhibits improved capabilities under the [vicuna evaluation protocol](https://github.com/lm-sys/FastChat) while being very cost-effective and easy-to-implement at the same time:
