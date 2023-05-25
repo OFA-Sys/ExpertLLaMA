@@ -13,7 +13,7 @@ This repo introduces ***ExpertLLaMA***, a solution to produce high-quality, elab
  - ExpertLLaMA checkpoint trained on the above expert data [ToDo].
  - Evaluations of ExpertLLaMA against existing models including Vicuna, LLaMA-GPT4, etc.
 
-Check our paper (to be uploaded) for further details.
+Check our [paper](https://arxiv.org/abs/2305.14688) for further details.
 
 **Usage and License Notices**: The data is intended and licensed for research use only. The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes.
 
@@ -41,7 +41,7 @@ We release ExpertLLaMA that achieves 96% capability of ChatGPT, and surpasses co
 ### ExpertPrompting
 How to elicit the best potential of a generative agent like ChatGPT to produce instruction-following dataset of high quality? We propose to ask the agent to try to behave like an expert agent. The key success of our approach lies in the cutomized descriptions that adaptively depict the **best suited** expert for each specialized instruction.
 
-We use In-Context Learning to automatically write cutomized expert identity and find the quality quite satisfying. We then prepend corresponding expert identity to each instruction to produce augmented instruction-following data. We refer to the overall framework as **ExpertPrompting**, please find more details in our paper.
+We use In-Context Learning to automatically write cutomized expert identity and find the quality quite satisfying. We then prepend corresponding expert identity to each instruction to produce augmented instruction-following data. We refer to the overall framework as **ExpertPrompting**, please find more details in our [paper](https://arxiv.org/abs/2305.14688).
 
 ### ExpertLLaMA
 
@@ -128,14 +128,16 @@ TODO.
 
 ### Citation
 
-Please cite the repo as follows. (the arxiv paper is being uploaded.)
+If you find the data or model useful, please cite this repo as follows.
 
 ```
-@misc{ExpertPrompting,
-  title = {ExpertPrompting: Instructing Large Language Models to be Distinguished Experts},
-  author = {Benfeng Xu, An Yang, Junyang Lin, Quan Wang, Chang Zhou, Yongdong Zhang, Zhendong Mao},
-  year = {2023},
-  archivePrefix = {arXiv},
+@misc{xu2023expertprompting,
+      title={ExpertPrompting: Instructing Large Language Models to be Distinguished Experts}, 
+      author={Benfeng Xu and An Yang and Junyang Lin and Quan Wang and Chang Zhou and Yongdong Zhang and Zhendong Mao},
+      year={2023},
+      eprint={2305.14688},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
