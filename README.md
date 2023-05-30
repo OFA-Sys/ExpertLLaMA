@@ -13,7 +13,7 @@ This repo introduces ***ExpertLLaMA***, a solution to produce high-quality, elab
  - ExpertLLaMA checkpoint trained on the above expert data.
  - Evaluations of ExpertLLaMA against existing models including Vicuna, [LLaMA-GPT4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM), etc.
 
-Check our [**paper**](https://arxiv.org/abs/2305.14688) for further details.
+Check our **paper**, [**ExpertPrompting: Instructing Large Language Models to be Distinguished Experts**](https://arxiv.org/abs/2305.14688) for further details.
 
 **Usage and License Notices**: The data is intended and licensed for research use only. The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes.
 
