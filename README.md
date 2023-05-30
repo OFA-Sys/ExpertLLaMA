@@ -76,8 +76,7 @@ All data are formatted as `jsonl` where each line is an instance corresponding t
 [`alpaca_gpt-3.5_plus.jsonl`](./data/alpaca_gpt-3.5_plus.jsonl)
 
 - `instruction`: `str`, describes the task the model should perform. Re-used from Alpaca.
-- `answer`: `str`, `gpt-3.5-turbo` generated response with rule-based augmentation where we prepend a fixed prompt into the instruction. investigated as another baseline for comparison.P
-
+- `answer`: `str`, `gpt-3.5-turbo` generated response with rule-based augmentation where we prepend a fixed prompt into the instruction. investigated as another baseline for comparison.
 
 [`template.py`](./template.py)
 
