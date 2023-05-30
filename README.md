@@ -13,11 +13,12 @@ This repo introduces ***ExpertLLaMA***, a solution to produce high-quality, elab
  - ExpertLLaMA checkpoint trained on the above expert data [ToDo].
  - Evaluations of ExpertLLaMA against existing models including Vicuna, [LLaMA-GPT4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM), etc.
 
-Check our [paper](https://arxiv.org/abs/2305.14688) for further details.
+Check our [**paper**](https://arxiv.org/abs/2305.14688) for further details.
 
 **Usage and License Notices**: The data is intended and licensed for research use only. The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes.
 
 ## News
+
 **[2023.05.23]** Initial release on expert data, evaluation, paper, etc.
 
 
@@ -113,8 +114,21 @@ torchrun --nproc_per_node=4 --master_port=<your_random_port> train.py \
 
 ## Recovering ExpertLLaMA Weights
 
-TODO.
+To comply with the LLaMA model license, we only release the delta weights, you should add our delta to the original LLaMA weights to obtain the ExpertLLaMA weights. The process and script is adapted from [Vicuna](https://github.com/lm-sys/FastChat#vicuna-weights).
 
+ - Step1: Request for the official LLaMA model weights (7B) and convert it into huggingface transformers format, check the instructions [here](https://huggingface.co/docs/transformers/main/model_doc/llama).
+ - Step2: Download our [Delta weigths](https://huggingface.co/OFA-Sys/expertllama-7b-delta/tree/main) at here and put it at
+`<downloaded_delta_weights>`, or you can simply set it to `OFA-Sys/expertllama-7b-delta`.
+ - Step3: run `./model/apply_delta.py` as follows:
+```
+python3 apply_delta.py --base-model-path {your_base_model_path} --target-model-path {your_target_model_path} --delta-path {downloaded_delta_weights}
+```
+
+You can now **try ExpertLLaMA locally** by running:
+```
+python3 gen_demo.py --expertllama_path {your_target_model_path}
+```
+The inference approximately consumes 15GB memory using fp16.
 
 ## Related Works, Citation and Acknowledgements
 
