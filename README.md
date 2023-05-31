@@ -18,7 +18,7 @@ Check our **paper**, [**ExpertPrompting: Instructing Large Language Models to be
 **Usage and License Notices**: The data is intended and licensed for research use only. The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes.
 
 ## News
-
+**[2023.05.31]** Release model weights, and try the live demo at [here](https://huggingface.co/spaces/OFA-Sys/expertllama).
 **[2023.05.23]** Initial release on expert data, evaluation, paper, etc.
 
 
